@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dept. of CS&IT Alumni</title>
+    <!--Links-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="navigation">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <ul class="ul-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+                    <button type="button" class="btns" onclick="window.location.href='login.html'">Log in</button>
+                    <button type="button" class="btns bg-black text-white" onclick="window.location.href='signup.html'">Sign up</button>
+                </div>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="dropdown-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="btns " 
+                onclick="window.location.href='login.html'">Log in</button></li>
+            <li><button type="button" class="btns bg-black text-white" 
+                onclick="window.location.href='signup.html'">Sign up</button></li>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <header>
+        <div class="main-div h-[650px] flex flex-col  justify-center items-center 
+        bg-no-repeat bg-cover bg-center bg-[url('images/header-img.JPG')] max-sm:h-[350px]">
+
+            <div class="main-div-content flex flex-col items-center p-6 w-[80%]">
+
+            <h1 class="text-4xl font-extrabold leading-[67px] max-md:max-w-full max-md:text-4xl 
+            max-md:leading-[54px]">Welcome to the Department of CS&IT Alumni Network</h1>
+
+            <p class="text-white text-lg  mt-6 max-md:max-w-full"><span class="max-sm:hidden">
+                As proud members of this esteemed department, our shared experiences bind us together in a network that 
+                transcends time and space. Whether you graduated recently or years ago, this platform serves as a 
+                virtual hub for reconnecting, sharing professional insights, and fostering a sense of community.</span>
+                Join us in celebrating the journey that started within the department and continues to thrive through the 
+                connections forged here.</p>
+                <button type="button" class="home-btn bg-black text-white" onclick="window.location.href='signup.html'">Register Yourself</button>
+        </div>
+        </div>
+    </header>
+
+    <div class="flex w-full flex-row items-center gap-20 px-16 py-28 max-md:px-5  max-[1100px]:flex-wrap">
+
+        <div class="header-content flex flex-col items-start gap-6 w-full max-md:items-center">
+            <h1 class="font-bold text-6xl leading-[120%] max-md:max-w-full max-md:text-5xl max-md:leading-[54px] 
+            max-sm:text-center">Connect and Collaborate</h1>
+
+            <p class="text-lg font-normal leading-[150%]">Step into the legacy of the Computer Science and Information Technology (CS&IT) Department Alumni Network, 
+                where success stories are written, and futures are forged. Our alumni stand as living proof of the excellence 
+                instilled in our programs, charting paths of innovation and achievement in the realms of computer science and 
+                information technology. More than a network, this is a collaborative ecosystem where the past meets the present, 
+                and the future is shaped collectively.</p>
+
+            <button type="button" class="home-btn bg-black text-white" onclick="window.location.href='about.html'">Know more about us!</button>
+
+        </div>
+
+
+        <div class="header-img w-full h-[650px] max-sm:h-[500px]">
+            <img src="images/hero-img.webp" alt="Campus image" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <div class="ncm flex w-full px-16 py-24 items-start flex-col gap-16 max-md:px-5">
+
+        <div class="section-title flex items-start gap-14 self-stretch w-full max-md:flex-wrap">
+
+            <div class="heading flex flex-col items-start justify-between gap-4 max-w-[50%] max-md:max-w-full">
+                <h1 class="text-base font-semibold leading-6">Discover</h1>
+                <h1 class="text-5xl font-bold leading-[120%]">Unlock the Benefits of Our Alumni Network</h1>
+            </div>
+
+            <div class="heading-content w-1/2 max-md:w-full">
+                <p class="text-lg font-normal">Join our alumni network and gain access to a wide range of benefits and services. 
+                    Connect with fellow alumni at networking events, explore exciting career opportunities, 
+                    and receive valuable mentorship.</p>
+            </div>
+        </div>
+
+        <div class="section-content flex flex-start self-stretch gap-12 max-md:flex-wrap">
+
+            <div class="events flex flex-col items-start gap-6">
+                <img src="images/network.png" alt="Networking Events" class="w-12">
+                <h1 class="font-bold text-3xl leading-[130%]">Networking Events</h1>
+                <p class="text-base font-normal leading-6">Expand your professional network and make meaningful connections.</p>
+            </div>
+            <div class="career flex flex-col items-start gap-6">
+                <img src="images/career.png" alt="Networking Events" class="w-12">
+                <h1 class="font-bold text-3xl leading-[130%]">Career Opportunities</h1>
+                <p class="text-base font-normal leading-6">Discover job openings and advance your career with exclusive
+                    opportunities.</p>
+            </div>
+            <div class="mentor flex flex-col items-start gap-6">
+                <img src="images/mentor.png" alt="Networking Events" class="w-12">
+                <h1 class="font-bold text-3xl leading-[130%]">Mentorship Programs</h1>
+                <p class="text-base font-normal leading-6">Receive guidance and support from experienced professionals in your
+                    field.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="items-center flex flex-col px-20 py-12 max-md:px-5">
+        <img src="images/microsoft.svg" class="max-w-full mt-16 max-md:mt-10"/>
+        <div class="text-black text-center text-2xl font-bold leading-9 max-w-screen-md mt-8 max-md:max-w-full">
+            <p>The Computer Science department at UET Peshawar has been instrumental in
+            shaping my career. The knowledge and skills I gained during my time there
+            have been invaluable.</p>
+        </div>
+        <img src="images/profile.png" class="object-contain object-center w-14 overflow-hidden max-w-full mt-8 rounded-[50%]"/>
+        <div class="text-black text-center text-base font-semibold leading-6 mt-4">
+            <h1>Ahmed Ali</h1>
+        </div>
+        <div class="text-black text-center text-base leading-6 mb-10" >
+            <h5>Software Engineer, Microsoft</h5>
+        </div>
+        </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-content">
+                
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="logo">
+                </div>
+    
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signup.html">Registration Form</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-socials">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div><i class="fa-brands fa-x-twitter fa-lg"></i></div>
+                    <div><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <div><i class="fa-brands fa-youtube fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">
+                <h5>© 2023 Department of CS & IT</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+</body>
+</html>
