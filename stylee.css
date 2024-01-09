@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+  }
+  
+  .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  .content-section {
+    float: left;
+    width: 65%;
+    text-align: center;
+  }
+  
+  .image-section {
+    float: right;
+    width: 33%;
+    padding-left: 40px;
+    padding-top: 40px;
+   
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    
+  }
+  .image-section img:hover {
+    transform: scale(1.1);
+    timeline-scope: 1s;
+}
+  .content-section .title {
+    height: auto;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  .content-section .content h3 {
+    margin-top: 20px;
+    margin-left: 2%;
+    color: #5d5d5d;
+  }
+  
+  .content-section .content p {
+    margin-top: 8px;
+    margin-left: 2%;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6; /* Adjust line height for better readability */
+    color: #333; /* Set text color */
+}
+
+.content-section .content p:first-child {
+    margin-top: 0; /* Remove top margin for the first paragraph */
+}
+  @media (max-width: 768px) {
+    
+  .section {
+  
+    min-height: 80vh;
+   
+  }
+    .container {
+      width: 80%;
+      display: block;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .content-section {
+      float: none;
+      width: 100%;
+      display: block;
+      width: 55%;
+      margin: auto;
+    }
+    .image-section {
+      float: none;
+      width: 100%;
+    }
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    .content-section .title {
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+    .content-section .content .button {
+      text-align: center;
+    }
+    .content-section .content .button a {
+      padding: 9px 30px;
+    }
+    .content-section .content p {
+      margin-top: 8px;
+      margin-left: 2%;
+      font-family: 'Arial', sans-serif;
+      font-size: 8px;
+      line-height: 1.6; /* Adjust line height for better readability */
+      color: #333; /* Set text color */
+  }
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.team-section {
+  width: 100%;
+  display: flex;
+}
+
+.team-section .container {
+  width: 80%;
+  margin: auto;
+ 
+}
+
+.team-section .container .row {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+   display: flex;
+}
+
+.team-section .container .row .title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-section .container .row .title h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #eb6;
+}
+
+.team-section .container .row .title p {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 30px 0;
+  color: #a3a3a3;
+}
+
+.team-section .container .team-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Set the direction to column */
+  margin-top: 50px;
+}
+
+.team-section .container .team-card .card {
+  width: 100%; /* Set the width to 100% to span the entire column */
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px; /* Add margin between cards if needed */
+}
+@media (max-width: 768px) {
+
+  .team-section .container .row .title h1 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+  #popupModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
